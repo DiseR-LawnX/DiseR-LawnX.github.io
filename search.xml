@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>无Root上Pixiv的新姿势</title>
+      <link href="/2018/07/30/norootChangeHostToGoPixiv/"/>
+      <url>/2018/07/30/norootChangeHostToGoPixiv/</url>
+      
+        <content type="html"><![CDATA[<p>我前面发了一篇上P站的教程,电脑手机都通用,但手机却必须要Root才能使用.很多读者跟我反馈说手机没有Root权限,emmmmm,这就有点坑了.于是博主找了几天,找到一个可以代替修改Hosts的方法,无Root机型也可以用辣<br><a id="more"></a><br>下面咱们来看看使用方法</p><p>首先准备工具:<a href="&quot;https://fir.im/gohosts&quot;">GoHosts(点击下载)</a>,安装好备用<br>还有两个源(自制):<br>CoolHosts源:<a href="https://github.com/DiseR-LawnX/hosts/raw/master/coolhost/hosts" target="_blank" rel="noopener">https://github.com/DiseR-LawnX/hosts/raw/master/coolhost/hosts</a><br>pixiv专用源:<a href="https://github.com/DiseR-LawnX/hosts/raw/master/pixiv/hosts" target="_blank" rel="noopener">https://github.com/DiseR-LawnX/hosts/raw/master/pixiv/hosts</a></p><p>首先要自己选择一个源把后面的网址复制下来备用.注释:CoolHosts是多网站的代理,而pixiv专用源只能用于pixiv,网速差异我没比较过,自己试试吧</p><p>首先打开GoHosts软件,主界面如图:</p><center><img height="350" src="https://blog.drawnx.top/image/norootChangeHostToGoPixiv/1.png"></center><br>右上角有个开关,可以切换root/noroot模式,现在这个教程是把root关闭了的,有root的童鞋当然也可以开启<br><br>现在在上半部分的蓝色区域里的右下角我们可以看到一个白色的三角形,点击它,依次出现并点击指定源 -&gt; 网络,这时会出现弹窗如图所示<br><center><img height="350" src="https://blog.drawnx.top/image/norootChangeHostToGoPixiv/2.png"></center><p>点击弹窗右上角的加号,又会出现一个带编辑框的弹窗,如下图</p><center><img height="350" src="https://blog.drawnx.top/image/norootChangeHostToGoPixiv/3.png"></center><p>现在,把刚刚复制的源链接粘贴上去然后一直点击确定,最后会回到主界面,这时主界面上半部分会多出一句网络源的地址,注意检查一下.最后点击一键应用HOSTS按钮,有可能会出现下图所示提醒,点击确定即可</p><center><img height="350" src="https://blog.drawnx.top/image/norootChangeHostToGoPixiv/4.png"></center><p>原来的按钮会变成停止按钮,这时就可以访问P站了,快试试吧!</p><p>注意:使用期间包括访问P站不能关闭软件,否则会停止,等到使用完毕,再点击停止或关闭软件</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实用教程 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>利用BaiduPCS-Go高速下载百度网盘文件</title>
+      <link href="/2018/07/26/cmdBDNDownloader/"/>
+      <url>/2018/07/26/cmdBDNDownloader/</url>
+      
+        <content type="html"><![CDATA[<h2 id="BaiduPCS-Go是一款优秀的百度网盘客户端"><a href="#BaiduPCS-Go是一款优秀的百度网盘客户端" class="headerlink" title="BaiduPCS-Go是一款优秀的百度网盘客户端"></a>BaiduPCS-Go是一款优秀的百度网盘客户端</h2><p>昨天为了下载一个九十来G的百度网盘文件可谓是费尽了心思,用Chrome油猴插件+IDM下载,但怎么都下不好,总是损坏,这几天在网上找方法找到一个Github大佬开发的命令行下载工具,速度很快,下面就分享给大家<br><a id="more"></a><br>注:<br>原帖来自<a href="https://laod.cn/black-technology/baidupcs-go-baiduyun.html" target="_blank" rel="noopener">老D博客</a>.</p><p>Github开源地址:<a href="https://github.com/iikira/BaiduPCS-Go" target="_blank" rel="noopener">BaiduPCS-Go</a></p><p>1.先准备所需要的文件:,主程序:<a href="https://github.com/iikira/BaiduPCS-Go/releases" target="_blank" rel="noopener">Github下载页</a><br>2.打开 此电脑&gt;属性&gt;高级系统设置&gt;环境变量,选中下半部分的系统变量中的Path,选择编辑</p><center><img height="350" src="https://blog.drawnx.top/image/cmdBDNDownloader/1.png"></center><p>3.添加一条变量,输入主程序的存放目录(不用输入文件名),我是存放在D:/Go文件夹的,然后一直点击确定</p><center><img height="350" src="https://blog.drawnx.top/image/cmdBDNDownloader/2.png"></center><p>4.然后按下Win+R键输入cmd启动命令提示符,输入BaiduPCS-Go后回车,会运行BaiduPCS-Go,然后输入login回车,提示登录,按照指示输入账号和密码再次回车</p><p>5.最后输入d <filepath>(在网盘中的文件路径),即可开始下载<br>注:建议设一个专门存放要下载的文件的文件夹,如在网盘根目录放新建一个”下载”文件夹,在里面放入一个1.mp4的文件,这时输入d 下载/1.mp4即可开始下载</filepath></p><p><center><img height="250" src="https://blog.drawnx.top/image/cmdBDNDownloader/3.png"></center><br>上图是博主用10兆WiFi下载的效果图(没办法,条件限制)</p><p>有问题可在下方评论区告诉我</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实用教程 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>上Pixiv的新姿势</title>
+      <link href="/2018/07/23/TheNewWayToGoPixiv/"/>
+      <url>/2018/07/23/TheNewWayToGoPixiv/</url>
+      
+        <content type="html"><![CDATA[<p>眼看着现在都2018年7月了,P站还是上不去,这让很多小伙伴心中十分焦急啊哈,所以呢这里就分享一个常用的方法,当然我也不是原创,这是网上一位大佬的方法,代理服务器呢应该是他自己的,现在原帖没找到,我就只好在这里分享下这个方法咯<br><a id="more"></a></p><p>打开文件hosts(无后缀)<br>Windows: C:\Windows\System32\drivers\etc\hosts<br>Android: \system\etc\hosts<br>打开并编辑,注意:Windows系统要获取管理员权限才能编辑此文件<br>在文件末端粘贴如下图的文字</p><p><img height="400" src="https://blog.drawnx.top/image/TheNewWayToGoPixiv/1.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">上图中的内容如下:</span><br><span class="line">#Pixiv</span><br><span class="line">210.129.120.45 pixiv.net</span><br><span class="line">210.129.120.45 www.pixiv.net</span><br><span class="line">210.129.120.45 accounts.pixiv.net</span><br><span class="line">210.129.120.45 touch.pixiv.net</span><br><span class="line">210.129.120.45 www.pixiv.net</span><br><span class="line">210.129.120.45 accounts.pixiv.net</span><br><span class="line">210.129.120.45 touch.pixiv.net</span><br><span class="line">210.129.120.45 www.pixiv.net</span><br><span class="line">210.129.120.45 accounts.pixiv.net</span><br><span class="line">210.129.120.45 touch.pixiv.net</span><br><span class="line">210.140.131.146 source.pixiv.net</span><br><span class="line">210.140.131.147 imgaz.pixiv.net</span><br><span class="line">210.129.120.45 app-api.pixiv.net</span><br><span class="line">210.129.120.48 oauth.secure.pixiv.net</span><br><span class="line">210.129.120.45 dic.pixiv.net</span><br><span class="line">210.140.131.153 comic.pixiv.net</span><br><span class="line">210.129.120.45 factory.pixiv.net</span><br><span class="line">74.120.148.207 g-client-proxy.pixiv.net</span><br><span class="line">210.140.170.179 sketch.pixiv.net</span><br><span class="line">210.129.120.45 payment.pixiv.net</span><br><span class="line">210.129.120.45 sensei.pixiv.net</span><br><span class="line">210.140.131.144 novel.pixiv.net</span><br><span class="line">210.129.120.45 en-dic.pixiv.net</span><br><span class="line">210.140.131.145 i1.pixiv.net</span><br><span class="line">210.140.131.145 i2.pixiv.net</span><br><span class="line">210.140.131.145 i3.pixiv.net</span><br><span class="line">210.140.131.145 i4.pixiv.net</span><br><span class="line">210.140.131.159 d.pixiv.org</span><br><span class="line">210.140.92.135 pixiv.pximg.net</span><br><span class="line">210.140.92.136 i.pximg.net</span><br><span class="line">#Pixiv End</span><br></pre></td></tr></table></figure><p>然后保存</p><p><img height="400" src="https://blog.drawnx.top/image/TheNewWayToGoPixiv/2.png"></p><p>注意授予管理员权限,完全成功保存后重启浏览器<br>如果失效请在下方评论区找我解决</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实用教程 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客重建</title>
+      <link href="/2018/06/21/blogrestart/"/>
+      <url>/2018/06/21/blogrestart/</url>
+      
+        <content type="html"><![CDATA[<p>这段时间没事啊干了些没有意义的事<br>什么学lua、html+css等等这些混乱的东西<br>当然还把博客重建了下<br><a id="more"></a><br>现在的博客不仅加入谷歌统计还完善了来必力的评论插件<br>也准备开始正式写自己的博客了<br>。。。<br>。。。<br>。。。<br>(果然废话说不下去了)<br>算了算了不说了</p><h2 id="emm"><a href="#emm" class="headerlink" title="emm"></a>emm</h2><p>还有一件事呢<br>就是<br>做了个博客套壳浏览器<br>自己懒得写,于是用了寒歌大佬(<a href="&quot;http://www.coolapk.com/u/675594&quot;">@Coolapk-寒歌</a>)开发的Fusion App做了一个套壳浏览器<br>点击下方链接可以下载哦</p><h3 id="下载地址-Kiriki’s-Blog-app-apk"><a href="#下载地址-Kiriki’s-Blog-app-apk" class="headerlink" title="下载地址:Kiriki’s Blog(app.apk)"></a>下载地址:<a href="/blogapp/app.apk">Kiriki’s Blog(app.apk)</a></h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 废话系列 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 没事的闲话 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
