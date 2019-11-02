@@ -1,1 +1,15 @@
-test
+版本2:V1
+1.Linux 4.14.151
+2.Fix tcp westwood and bbr mode
+3.Reset westwood by default
+4.Improve a bit touch response
+
+版本1:V1-RC1
+1.Linux 4.14.150
+2.使用 Dynamic Fsync
+3.使用 Dynamic SchedTune Boost v3
+4.默认启用 zram lz4 压缩器
+5.默认启用 Westwood
+6.默认关闭 dm/avb 校检
+7.以及其他一些优化
+8.兼容 AOSP 和 MIUI (通用)
